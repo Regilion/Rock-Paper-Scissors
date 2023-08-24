@@ -29,32 +29,16 @@ function playRound(playerSelection, computerSelection) {
         return `You won! ${playerSelection} beats ${computerSelection}`
     }
 
-
-    // else if (playerSelection === "" || playerSelection !== "rock") {
-        
-    // }
-
     else {
         return `You Lost! ${computerSelection} beats ${playerSelection}`
     }
 };
 
-// make the function case insensitive 
-// return the result of the function call not logging them to the console
 // Write a function that keeps score of a 5-round game and reports a loser or win at the end
 function game() {
     for (let i = 1; i <= 5; i++) {
         console.log(playRound());
     }
-    // console.log(playRound());
-    // console.log(playRound());
-    // console.log(playRound());
-    // console.log(playRound());
-    // console.log(playRound());
-    // playRound();
-    // playRound();
-    // playRound();
-    // playRound();
 }
 
 game()
